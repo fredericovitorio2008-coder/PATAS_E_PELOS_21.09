@@ -1,102 +1,89 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Patas & Pelos</title>
+    <title>Patas e Pelos - Início</title>
+    
+    <!-- Correção da ordem das fontes do Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-    <!--Inicio do cabeçalho-->
-
-    <header class="header">
-        <div class="container">
-            
-            <!-- Logótipo (com a imagem dentro da pasta 'img') -->
-            <a href="#" class="logo">
-                <img src="img/Logo patas e pelos.png" alt="Logótipo Patas & Pelos" class="img-logo">
-            </a>
-            
-            <!-- Menu de Navegação -->
-            <nav class="nav">
-                <ul class="cabecalho">
-                    <li><a href="#">Início</a></li>
-                    <li><a href="#">Contato</a></li> 
-                    <li><a href="#">Sobre nós</a></li>
-                </ul>
-            </nav>
-
+    <!-- Cabeçalho -->
+    <header class="cabecalho">
+        <div class="logo">
+            <img src="img/Logo Patas e Pelos.png" alt="Logotipo Patas e Pelos">
         </div>
+        <nav class="menu">
+            <ul class="menu-lista">
+                <li><a href="#">Início</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#servicos">Serviços</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <!--Fim Do cabeçalho-->
-
-    <!-- Título Principal -->
-
-    <main>
-
-        <section>
-
-            <h1>Bem-vindo a Patas & Pelos!</h1>
-            
-            <hr>
-
-            <h2>Conheça nosos serviços!! </h2>
-
-        </section>
-
-        <div class="produtoseservicos">
-             <!--PIMEIRO ARTICLE OU SEJA CARD-->
-             <article class="precos">
-                <img src="img/hotel-para-cachorro.jpg" alt="hotel para hotel-para-cachorro">
-                <p class="descicoes">Hotel pet para cachorro  (porte medio)<br>
-                </p>
-                <button class="meu-botao">R$ 25,00 </button>
-            </article>
-
-            <!--SEGUNDO ARTICLE OU SEJA CARD-->
-            <article class="precos">
-                <img src="img/images_banho e tosa.jpg" alt="banho e tosa">
-                <p class="descicoes">Banho e tosa animal (premium)<br>
-                </p>
-                <button class="meu-botao">R$ 25,00</button>
-            </article>
-
-             <!--TERCEIRO ARTICLE OU SEJA CARD-->
-             <article class="precos">
-                <img src="img/especialidades-veterinarias-1.jpg" alt="veterinarios">
-                <p class="descicoes">Especialidades veterinarias<br>
-                </p>
-                <button class="meu-botao">R$ 150,00</button>
-            </article>
-
-            <!--TERCEIRO ARTICLE OU SEJA CARD-->
-            <article class="precos">
-                <img src="img/especialidades-veterinarias-1.jpg" alt="veterinarios">
-                <p class="descicoes">Acessórios & Brinquedos (pet toys assortment)<br>
-                </p>
-                <button class="meu-botao">R$ 150,00</button>
-            </article>
-
-
-        </div>
-           
-
-
-       
-
+    <!-- Conteúdo Principal / Início -->
+    <main class="conteudo-principal">
+        <h1>Patas & Pelos</h1>
+        <p class="slogan-principal">Cuidado, amor e bem-estar para quem faz parte da família</p>
     </main>
 
-    <nav>
-        <footer class="rodape">
-            <p>Telefone: (31) 9993 7816</p>
-            <p>Patasepelos@gmail.com</p>
-            <p>Avenida João cesar de Oliveira n°555 Contagem MG</p>
-        </footer>
-    </nav>
-       
+    <!-- Seção Sobre -->
+    <section id="sobre" class="secao-sobre">
+    <div class="container">
+        <h2>Sobre Nós</h2>
+        <p>Fundada com uma paixão incondicional pelos animais, a <strong>Patas & Pelos</strong> nasceu do sonho de criar um espaço onde cada pet seja tratado com o mesmo amor, respeito e dedicação que recebe em sua própria casa. Acreditamos que os animais fazem parte da família e, por isso, merecem cuidados à altura do carinho que nos oferecem todos os dias.</p>
+        
+        <p>Nossa estrutura foi cuidadosamente planejada para proporcionar total segurança, conforto e bem-estar. Contamos com uma equipe de profissionais altamente qualificados e apaixonados pelo que fazem, desde especialistas em estética animal até médicos veterinários prontos para cuidar da saúde preventiva e do desenvolvimento feliz do seu companheiro.</p>
+        
+        <p>Mais do que oferecer serviços de banho, tosa, atendimento clínico e um pet shop completo com os melhores produtos do mercado, nós buscamos construir uma relação de confiança com cada tutor. Venha nos fazer uma visita, tomar um café e conhecer de perto o cantinho mais especial dedicado ao seu melhor amigo!</p>
+    </div>
+</section>
 
-    
+    <!-- Seção Serviços -->
+    <section id="servicos" class="secao-servicos">
+        <div class="container">
+            <h2>Nossos Serviços</h2>
+            <div class="cards-servicos">
+                <div class="card">
+                    <h3>🐾 Banho e Tosa</h3>
+                    <p>Produtos de alta qualidade, profissionais especializados e muito carinho para deixar seu pet limpinho e cheiroso.</p>
+                </div>
+                <div class="card">
+                    <h3>🩺 Consulta Veterinária</h3>
+                    <p>Atendimento clínico preventivo e especializado para cuidar da saúde e prevenir qualquer probleminha.</p>
+                </div>
+                <div class="card">
+                    <h3>🦴 Pet Shop & Acessórios</h3>
+                    <p>Rações premium, brinquedos divertidos, caminhas confortáveis e tudo o que seu pet precisa.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Contato -->
+    <section id="contato" class="secao-contato">
+        <div class="container">
+            <h2>Entre em Contatho</h2>
+            <p>Venha nos visitar ou tire suas dúvidas através dos nossos canais:</p>
+            <ul>
+                <li>📞 Telefone: (31) 99999-9999</li>
+                <li>📧 E-mail: contato@patasepelos.com</li>
+                <li>📍 Endereço: Rua dos Animais Felizes, nº 123</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer class="rodape">
+        <p>&copy; 2026 Patas & Pelos - Todos os direitos reservados.</p>
+    </footer>
+
 </body>
 </html>
