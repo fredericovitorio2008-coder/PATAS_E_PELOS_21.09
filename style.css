@@ -6,7 +6,7 @@
 }
 
 body {
-    background-image: url('img/Fundo\ Site\ Patas\ e\ Pelos.png');
+    background-image: url('img/Fundo Site Patas e Pelos.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -140,14 +140,14 @@ body {
     margin-bottom: 15px;
     border-bottom: 2px solid #0a6bac;
     padding-bottom: 5px;
-    margin-left: 45px;
+    margin-left: 35px;
 }
 
 .vendas {
     display: flex;
     gap: 20px;
     flex-wrap: wrap;
-    margin-left: 45px;
+    justify-content: center;
 }
 
 article.precos {
@@ -158,7 +158,6 @@ article.precos {
     padding: 15px;
     width: 250px;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-   
 }
 
 article img {
@@ -174,23 +173,115 @@ article p {
     font-weight: bold;
     color: #333;
     margin-bottom: 15px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
-.meu-botao {
-    background-color: #28a745;
-    color: white;
+/* --- ESTILOS DOS BOTÕES DOS PRODUTOS (CORRIGIDOS E ESTILIZADOS) --- */
+article.precos a {
+    text-decoration: none;
+    display: block;
+    width: 100%;
+}
+
+article.precos button {
+    background: linear-gradient(135deg, #28a745, #20c997);
+    color: #ffffff;
     border: none;
-    border-radius: 5px;
-    padding: 8px 15px;
+    border-radius: 25px;
+    padding: 10px 15px;
     font-size: 16px;
     font-weight: bold;
     cursor: pointer;
-    transition: background-color 0.2s;
+    width: 100%;
+    box-shadow: 0 4px 10px rgba(40, 167, 69, 0.3);
+    transition: all 0.3s ease;
 }
 
-.meu-botao:hover {
-    background-color: #218838;
+article.precos button:hover {
+    background: linear-gradient(135deg, #218838, #17a2b8);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(40, 167, 69, 0.5);
 }
+
+/* =====================================================================
+   ESTILOS EXCLUSIVOS DA SEÇÃO DE SERVIÇOS (CENTRALIZADA E A MAIOR)
+   ===================================================================== */
+.secao-servicos-destaque {
+    background-color: rgba(255, 255, 255, 0.95);
+    border-radius: 15px;
+    padding: 50px 20px;
+    margin-bottom: 40px;
+    text-align: center;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+.secao-servicos-destaque h2 {
+    font-size: 38px;
+    color: #0a6bac;
+    margin-bottom: 30px;
+    border-bottom: 4px solid #0a6bac;
+    padding-bottom: 10px;
+    display: inline-block;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-left: 0;
+}
+
+.card-servico-gigante {
+    background: #ffffff;
+    border: 3px solid #0a6bac;
+    border-radius: 20px;
+    max-width: 850px;
+    margin: 0 auto;
+    padding: 50px;
+    box-shadow: 0 10px 30px rgba(10, 107, 172, 0.3);
+    text-align: left;
+    transition: transform 0.3s ease;
+}
+
+.card-servico-gigante:hover {
+    transform: scale(1.02);
+}
+
+.conteudo-servico h3 {
+    font-size: 32px;
+    color: #0a6bac;
+    margin-bottom: 20px;
+}
+
+.conteudo-servico p {
+    font-size: 19px;
+    color: #444;
+    line-height: 1.8;
+    margin-bottom: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.conteudo-servico a {
+    text-decoration: none;
+    display: inline-block;
+}
+
+.meu-botao-grande {
+    background-color: #007bff;
+    color: #772f2f;
+    border: none;
+    border-radius: 12px;
+    padding: 150px 350px;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 5px 15px rgba(40, 167, 69, 0.3);
+    transition: all 0.3s ease;
+    display: inline-block;
+}
+
+.meu-botao-grande:hover {
+    background: linear-gradient(135deg, #218838, #17a2b8);
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(40, 167, 69, 0.5);
+}
+/* ===================================================================== */
 
 .rodape {
     background-color: #333;
@@ -204,4 +295,3 @@ article p {
     margin: 5px 0;
     font-size: 14px;
 }
-
