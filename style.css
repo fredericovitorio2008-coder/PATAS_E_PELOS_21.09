@@ -10,23 +10,26 @@ body {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    background-attachment: fixed;
     min-height: 100vh;
-    color: #272626;
+    color: #333333;
     line-height: 1.6;
 }
 
+/* --- HEADER --- */
 .header {
-    background-color: #0a6bac;
+    background: linear-gradient(135deg, #0a6bac, #06aff1);
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 20px;
+    padding: 25px 20px;
     flex-wrap: wrap;
     gap: 20px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
 }
 
 .logo img {
-    height: 120px;
+    height: 100px;
     width: auto;
     display: block;
 }
@@ -36,262 +39,205 @@ body {
 }
 
 .header h1 {
-    font-size: 50px;
+    font-size: 42px;
     margin: 0;
     color: #ffffff;
-    font-weight: bold;
+    font-weight: 700;
     font-style: italic;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
 }
 
 .header p {
-    color: #ffffff;
-    font-size: 18px;
+    color: #f0f8ff;
+    font-size: 17px;
     margin: 0;
+    font-weight: 500;
 }
 
-.menu {
-    display: flex;
-    justify-content: center;
-    background-color: rgba(255, 255, 255, 0.8);
-    padding: 10px 0;
-}
-
-.menu-list {
-    border-radius: 25px;
-    display: flex;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 10px;
-}
-
-.menu a {
-    text-decoration: none;
-    color: #ffffff;
-    border: 2px solid #5f0c0c;
-    border-radius: 25px;
-    background-color: #06aff1;
-    padding: 8px 15px;
-    font-size: 16px;
-    font-weight: bold;
-    transition: background-color 0.3s, color 0.3s;
-}
-
-.menu a:hover {
-    background-color: #0056b3;
-    color: #07e9de;
-}
-
+/* --- SEARCH BOX --- */
 .search-box {
     display: flex;
     justify-content: center;
-    margin: 20px 0;
+    margin: 25px 0;
 }
 
 .search-box form {
     display: flex;
     align-items: center;
-    border: 2px solid #ccc;
-    border-radius: 25px;
+    border: 2px solid #e0e0e0;
+    border-radius: 30px;
     overflow: hidden;
-    width: 300px;
-    background-color: #fff;
+    width: 350px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
 }
 
 .search-box input {
     flex: 1;
     border: none;
-    padding: 10px 15px;
+    padding: 12px 18px;
     outline: none;
-    font-size: 16px;
+    font-size: 15px;
 }
 
 .search-box button {
-    background-color: #007bff;
+    background-color: #0a6bac;
     border: none;
     color: white;
-    padding: 10px 15px;
+    padding: 12px 18px;
     cursor: pointer;
     font-size: 16px;
+    transition: background 0.3s;
 }
 
 .search-box button:hover {
     background-color: #0056b3;
 }
 
+/* --- MENU --- */
+.menu {
+    display: flex;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 12px 0;
+    backdrop-filter: blur(5px);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.menu-list {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #ffffff;
+    border-radius: 20px;
+    background-color: #0a6bac;
+    padding: 8px 20px;
+    font-size: 15px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 5px rgba(10, 107, 172, 0.3);
+}
+
+.menu a:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+}
+
+/* --- MAIN CONTAINER --- */
 .principal {
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
 }
 
+/* --- SEÇÃO DE RAÇÕES --- */
 .categoria-secao {
-    background-color: rgba(255, 255, 255, 0.9);
-    border-radius: 10px;
-    padding: 20px;
-    margin-bottom: 30px;
+    background-color: rgba(255, 255, 255, 0.95);
+    border-radius: 16px;
+    padding: 30px;
+    margin-bottom: 35px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
 }
 
 .categoria-secao h2 {
-    font-size: 28px;
+    font-size: 26px;
     color: #0a6bac;
-    margin-bottom: 15px;
-    border-bottom: 2px solid #0a6bac;
-    padding-bottom: 5px;
-    margin-left: 35px;
+    margin-bottom: 25px;
+    border-bottom: 3px solid #0a6bac;
+    padding-bottom: 8px;
+    display: inline-block;
 }
 
 .vendas {
     display: flex;
-    gap: 20px;
+    gap: 25px;
     flex-wrap: wrap;
     justify-content: center;
 }
 
 article.precos {
     background: #ffffff;
-    border: 1px solid #bdc4ca;
-    border-radius: 8px;
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
     text-align: center;
-    padding: 15px;
-    width: 250px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    padding: 18px;
+    width: 220px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+article.precos:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.12);
 }
 
 article img {
     width: 100%;
-    height: 160px;
+    height: 150px;
     object-fit: cover;
-    border-radius: 5px;
-    margin-bottom: 10px;
+    border-radius: 8px;
+    margin-bottom: 12px;
 }
 
 article p {
-    font-size: 16px;
-    font-weight: bold;
-    color: #333;
+    font-size: 14px;
+    font-weight: 600;
+    color: #2d3748;
     margin-bottom: 15px;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    min-height: 40px;
 }
 
-/* --- ESTILOS DOS BOTÕES DOS PRODUTOS (CORRIGIDOS E ESTILIZADOS) --- */
-article.precos a {
-    text-decoration: none;
-    display: block;
-    width: 100%;
-}
-
-article.precos button {
+/* Botão de produtos padrão */
+.btn-produto {
     background: linear-gradient(135deg, #28a745, #20c997);
     color: #ffffff;
     border: none;
-    border-radius: 25px;
+    border-radius: 20px;
     padding: 10px 15px;
-    font-size: 16px;
+    font-size: 15px;
     font-weight: bold;
     cursor: pointer;
     width: 100%;
-    box-shadow: 0 4px 10px rgba(40, 167, 69, 0.3);
-    transition: all 0.3s ease;
+    box-shadow: 0 4px 10px rgba(40, 167, 69, 0.25);
+   
 }
 
-article.precos button:hover {
+.btn-produto:hover {
     background: linear-gradient(135deg, #218838, #17a2b8);
-    transform: translateY(-2px);
-    box-shadow: 0 6px 15px rgba(40, 167, 69, 0.5);
+    
 }
 
 /* =====================================================================
-   ESTILOS EXCLUSIVOS DA SEÇÃO DE SERVIÇOS (CENTRALIZADA E A MAIOR)
+   ESTILOS EXCLUSIVOS DA SEÇÃO DE SERVIÇOS (CENTRALIZADA E MODERNA)
    ===================================================================== */
-.secao-servicos-destaque {
-    background-color: rgba(255, 255, 255, 0.95);
-    border-radius: 15px;
-    padding: 50px 20px;
-    margin-bottom: 40px;
-    text-align: center;
-    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+.secaoservicosdestaque{
+    background-color: #06aff1;
 }
 
-.secao-servicos-destaque h2 {
-    font-size: 38px;
-    color: #0a6bac;
-    margin-bottom: 30px;
-    border-bottom: 4px solid #0a6bac;
-    padding-bottom: 10px;
-    display: inline-block;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    margin-left: 0;
-}
-
-.card-servico-gigante {
-    background: #ffffff;
-    border: 3px solid #0a6bac;
-    border-radius: 20px;
-    max-width: 850px;
-    margin: 0 auto;
-    padding: 50px;
-    box-shadow: 0 10px 30px rgba(10, 107, 172, 0.3);
-    text-align: left;
-    transition: transform 0.3s ease;
-}
-
-.card-servico-gigante:hover {
-    transform: scale(1.02);
-}
-
-.conteudo-servico h3 {
-    font-size: 32px;
-    color: #0a6bac;
-    margin-bottom: 20px;
-}
-
-.conteudo-servico p {
-    font-size: 19px;
-    color: #444;
-    line-height: 1.8;
-    margin-bottom: 30px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-
-.conteudo-servico a {
-    text-decoration: none;
-    display: inline-block;
-}
-
-.meu-botao-grande {
-    background-color: #007bff;
-    color: #772f2f;
-    border: none;
-    border-radius: 12px;
-    padding: 150px 350px;
-    font-size: 20px;
-    font-weight: bold;
-    cursor: pointer;
-    box-shadow: 0 5px 15px rgba(40, 167, 69, 0.3);
-    transition: all 0.3s ease;
-    display: inline-block;
-}
-
-.meu-botao-grande:hover {
-    background: linear-gradient(135deg, #218838, #17a2b8);
-    transform: translateY(-3px);
-    box-shadow: 0 8px 20px rgba(40, 167, 69, 0.5);
+.card-servico-gigante{
+    border: 1px solid #0056b3;
 }
 /* ===================================================================== */
 
+/* --- RODAPÉ --- */
 .rodape {
-    background-color: #333;
+    background-color: #1a202c;
     color: #fff;
     text-align: center;
-    padding: 20px;
-    margin-top: 40px;
+    padding: 25px;
+    margin-top: 50px;
 }
 
 .rodape p {
-    margin: 5px 0;
+    margin: 0;
     font-size: 14px;
+    color: #a0aec0;
 }
